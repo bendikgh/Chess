@@ -14,7 +14,6 @@ namespace Chess.Models
             } set {
                 if (this.GetLegalTiles().Contains(value)) {
                     this.setTile(value);
-                    this._tile.TilePiece = this;
                     return;
                 }
                 throw new ArgumentException("The brick cannot take this position");
@@ -23,6 +22,7 @@ namespace Chess.Models
         internal virtual void setTile(Tile tile)
         {
             this._tile = tile;
+            this._tile.TilePiece = this;
         }
 
         internal virtual void setLegalTile(Tile tile)

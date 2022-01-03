@@ -1,28 +1,23 @@
 ﻿<Properties StartupConfiguration="{38EA3484-86CA-454E-97C1-B28355D05BFC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Chess/Service/ChessMinMax.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Chess/Service/ChessService.cs">
     <Files>
-      <File FileName="Chess/Models/Board.cs" Line="239" Column="140" />
-      <File FileName="Chess/Models/Pieces/Queen.cs" />
-      <File FileName="Chess/Models/Tile.cs" />
-      <File FileName="Chess/Models/Pieces/King.cs" />
-      <File FileName="Chess/Models/Pieces/Knight.cs" />
-      <File FileName="Chess/Models/Pieces/Pawn.cs" />
-      <File FileName="Chess/Models/Pieces/Rook.cs" />
-      <File FileName="Chess/Service/ChessService.cs" Line="42" Column="54" />
-      <File FileName="Chess/Service/ChessMinMax.cs" Line="53" Column="44" />
+      <File FileName="Chess/Models/Board.cs" Line="274" Column="37" />
+      <File FileName="Chess/Models/Piece.cs" Line="25" Column="41" />
+      <File FileName="Chess/Models/Pieces/Queen.cs" Line="30" Column="10" />
+      <File FileName="Chess/Service/ChessService.cs" Line="51" Column="46" />
+      <File FileName="Chess/Models/Pieces/Bishop.cs" Line="1" Column="1" />
+      <File FileName="Chess/Models/Tile.cs" Line="21" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Chess" expanded="True">
             <Node name="Chess" expanded="True">
-              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True">
                 <Node name="Pieces" expanded="True" />
               </Node>
-              <Node name="Properties" expanded="True" />
               <Node name="Service" expanded="True">
-                <Node name="ChessMinMax.cs" selected="True" />
+                <Node name="ChessService.cs" selected="True" />
               </Node>
             </Node>
             <Node name="TestProject" expanded="True" />

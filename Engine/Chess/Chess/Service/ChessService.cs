@@ -28,14 +28,12 @@ namespace Chess.Service
 
             List<Tile> tmp = brick.GetLegalTiles();
 
-            string legalMoves = board.legalMoves();
-
             // Check win white
             if (board.checkWin('W'))
             {
                 return "{\"winner\": \"white\", " +
                     "\"board\": " + board.ToString() + ", " +
-                    "\"moves\": " + legalMoves + "}";
+                    "\"moves\": " + "" + "}";
             }
 
             // Black move
@@ -43,12 +41,14 @@ namespace Chess.Service
             Move move = algorithm.getMove('B', board);
             board.moveBrick(move.Brick, move.DestionationTile);
 
+            string legalMoves = board.legalMoves();
+
             // Check win black
             if (board.checkWin('B'))
             {
                 return "{\"winner\": \"black\", " +
                     "\"board\": " + board.ToString() + ", " +
-                    "\"moves\": " + legalMoves + "}";
+                    "\"moves\": " + "" + "}";
             }
 
             return "{\"winner\": null, " +

@@ -20,9 +20,9 @@ namespace Chess.Models.Pieces
         internal void setTile(Tile tile)
         {
             this._tile = tile;
-            this._tile.TilePiece = this;
             this.Rook.setLegalTile(tile);
             this.Bishop.setLegalTile(tile);
+            this._tile.TilePiece = this;
         }
 
         override
